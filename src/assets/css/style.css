@@ -577,13 +577,15 @@ color: var(--alternative);
 
 /* Card  */
 .cardDkt {
+  width: 47.2%;
   position: relative;
-  width: 60vw;
   color: var(--secondary);
   box-shadow: #000 0px 11px 15px 0px; 
   border: 1px solid var(--alternative);
   margin-top: 1.4rem;
   background-color: #8644A2;
+  margin: 1rem;
+
 }
 
 .cardDkt .card-img-top {
@@ -649,10 +651,10 @@ color: var(--alternative);
 }
 
 .projectsDiv{
-  width: 90%;
-  height: auto;
+  width: 82vw;
+  display: flex;
+  flex-wrap: wrap;
   margin: auto;
-  background-color: pink;
 }
 
 /* Media query */
@@ -776,6 +778,8 @@ color: var(--alternative);
     font-size: 1.7rem;
 }
 
+/* Projects Section */
+
 .cardDkt{
   display: none;
 }
@@ -785,7 +789,7 @@ color: var(--alternative);
 }
 
 #projects{
-  background-color: transparent;
+  background-color: var(--primary);
   height: auto;
 }
 

@@ -9,7 +9,7 @@
 
     <div class="row">
 
-        <ul class="nav nav-pills d-flex justify-content-center mt-4" id="pills-tab" role="tablist">
+        <ul class="nav nav-pills d-flex justify-content-center mt-4 red" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
                     <button class="nav-link text-white show active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
                   </li>
@@ -24,16 +24,16 @@
                   </li>
     </ul>
 
-    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-content center" id="pills-tabContent">
 
     <!-- All Projects -->
     <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
 
-    <div class="row projectsDiv" v-if="projects?.length">
+    <div class="projectsDiv" v-if="projects?.length">
                       <!-- Desktop cards -->
                 
 
-                <card v-for="project in projects" :key="project.id" class="cardDkt col-6">
+                <card v-for="project in projects" :key="project.id" class="cardDkt">
                     <template #cardImg>
                     <img :src="project.img_url" :alt="project.projectName" loading="eager" class="img-fluid card-img-top">
                     </template>
@@ -45,8 +45,30 @@
                     </template>
                 </card>
 
-
+              
     </div>
+
+    <!-- Need a different card -->
+    <!-- <div class="Mobile" v-if="projects?.length">
+                      
+                
+
+                <card v-for="project in projects" :key="project.id" class="cardDkt">
+                    <template #cardImg>
+                    <img :src="project.img_url" :alt="project.projectName" loading="eager" class="img-fluid card-img-top">
+                    </template>
+                    <template #cardOverlay>
+                    
+                    <h5 class="card-title">{{ project.projectName }}
+                    </h5>
+                    
+                    </template>
+                </card>
+
+              
+    </div> -->
+    
+
     </div>
 
     </div>
