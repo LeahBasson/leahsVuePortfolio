@@ -25,8 +25,14 @@
 </template>
 
 <script>
- export default {
-  name: 'HomeView'
+import LandingSection from '@/components/LandingSection.vue';
 
+ export default {
+  name: 'HomeView',
+
+  components: {
+   LandingSection,
+  }
+  
 }
 </script>
