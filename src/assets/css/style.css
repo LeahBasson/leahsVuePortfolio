@@ -468,3 +468,51 @@ img[alt='leah']{
       opacity: 1;
   }
 }
+
+/* Resume Section*/
+#resume{
+  height: auto;
+  background-color: var(--primary);
+  text-align: center;
+}
+
+.resText{
+  width: 70vw;
+  height: auto;
+  background-color: transparent;
+  margin: auto;
+  text-align: left;
+}
+
+.centerBtn{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+#resume h4{
+  margin-top: 2rem;
+color: var(--alternative); 
+}
+
+#resume p{
+  color: var(--secondary);
+  font-size: 20px;
+}
+
+.btnResume{
+  background-color: transparent;
+  border: 2px solid var(--alternative);
+  color: var(--secondary);
+  padding: 8px 30px;
+  font-size: 18px;
+}
+
+.btnResume:hover{
+  background-color: var(--alternative);
+  border: 2px solid var(--secondary);
+}
+
+.btnResume a{
+  text-decoration: none;
+  color: var(--secondary);
+}
