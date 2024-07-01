@@ -436,14 +436,35 @@ img[alt='leah']{
   font-family: "Montserrat", sans-serif;
 }
 
-nav a {
-  display: block;
-  padding: 15px 20px;
-  color: white;
-  text-decoration: none;
-  transition: border-bottom 0.3s;
+/* About Section */
+#about{
+  height: auto;
+  background-color: var(--primary);
+  text-align: center;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
 }
 
-nav a.active {
-  border-bottom: 3px solid yellow;
+.fadeInUp{
+  animation-name: fadeInUp;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+
+#about p{
+  width: 70vw;
+  font-size: 20px;
+  height: 32vh;
+  margin: auto;
+}
+
+@keyframes fadeInUp{
+  from {
+      transform: translate3d(0,40px,0);
+      opacity: 0;
+  }
+  to{
+      transform: translate3d(0,0,0);
+      opacity: 1;
+  }
 }
