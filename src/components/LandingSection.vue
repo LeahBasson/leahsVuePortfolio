@@ -21,7 +21,6 @@
                 <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
                 <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
                 <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <!-- <div><span class="star"><i class="bi bi-dot text-white"></i></span></div> -->
                 
                 <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
                 <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
