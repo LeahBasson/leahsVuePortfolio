@@ -28,6 +28,7 @@
 import LandingSection from '@/components/LandingSection.vue';
 import AboutSection from '@/components/AboutSection.vue';
 import ResumeSection from '@/components/ResumeSection.vue';
+import SkillsSection from '@/components/SkillsSection.vue';
 
  export default {
   name: 'HomeView',
@@ -35,7 +36,8 @@ import ResumeSection from '@/components/ResumeSection.vue';
   components: {
    LandingSection,
    AboutSection,
-   ResumeSection
+   ResumeSection,
+   SkillsSection
   }
   
 }

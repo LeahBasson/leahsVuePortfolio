@@ -490,7 +490,7 @@ img[alt='leah']{
 }
 
 #resume h4{
-  margin-top: 2rem;
+margin-top: 2rem;
 color: var(--alternative); 
 }
 
@@ -516,3 +516,156 @@ color: var(--alternative);
   text-decoration: none;
   color: var(--secondary);
 }
+
+/* Skills section */
+#skills{
+  height: auto;
+  background-color: var(--primary);
+  padding-top: 4rem;
+}
+
+.skillsText{
+  width: 70vw;
+  height: auto;
+  margin: auto;
+  text-align: left;
+  background-color: transparent;
+}
+
+#skills h4{
+  color: var(--alternative);
+  margin-bottom: 1rem;
+}
+
+#skills span{
+  color: var(--secondary);
+}
+
+#skills p{
+  font-size: 18px;
+  color: var(--secondary);
+  margin-bottom: 2.2rem;
+}
+
+/* Media query */
+@media (width < 999px)
+{
+    .stars{
+        display: none;
+    }
+
+    .banner{
+        width: 90vw;
+        height: auto;
+        background-color: transparent;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 2rem;
+    }
+
+    img[alt='leah']{
+        width: 14rem;
+        margin: auto;
+        order: 2;
+    }
+
+    .Greeting{
+        width: 78vw;
+        margin: auto;
+        height: auto;
+        background-color: transparent;
+        order: 1;
+        text-align: center;
+    }
+
+    .lnk i {
+        font-size: 1.2rem;
+        padding: 2px 2px;
+    }
+
+    .Greeting h1{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .Greeting h1 span{
+      font-size: 2.1rem;
+    }
+    
+    .Greeting h3{
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: normal;
+        margin-bottom: 1rem;
+        -webkit-text-stroke: none;
+    }
+
+    .Greeting h3::before{
+       display: none;
+    }
+
+    /* About Section */
+    #about{
+      height: auto;
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+
+  #about h2{
+      margin-top: 1rem;
+  }
+
+  #about p{
+      width: 80vw;
+      height: auto;
+      font-size: 1rem;
+  }
+
+  /* Resume Section */
+  #resume{
+    height: auto;
+}
+
+.resText{
+    width: 80vw;
+    text-align: center;
+}
+
+#resume h2{
+    margin-top: 3rem;
+}
+
+#resume h4{
+    font-size: 1rem;
+}
+
+#resume p{
+    font-size: 1rem;
+}
+
+.btnResume{
+    margin-top: 0;
+    font-size: 1rem;
+    padding: 5px 32px;
+    margin-bottom: 1rem ;
+}
+
+/* Skills Section */
+#skills{
+    height: auto;
+    padding-top: 1rem;
+}
+
+.skillsText{
+    width: 80vw;
+    text-align: center;
+}
+
+#skills h4{
+    font-size: 1.7rem;
+}
+
+  }
