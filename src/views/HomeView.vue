@@ -26,12 +26,14 @@
 
 <script>
 import LandingSection from '@/components/LandingSection.vue';
+import AboutSection from '@/components/AboutSection.vue';
 
  export default {
   name: 'HomeView',
 
   components: {
    LandingSection,
+   AboutSection
   }
   
 }
