@@ -120,3 +120,330 @@ section {
 .navbar-toggler .navbar-toggler-icon:hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 0, 26)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
+/* Home Section */
+
+#home{
+  height: auto;
+  background-color: black;
+}
+
+/* banner animation*/
+.stars{
+  position: absolute;
+  width: 100%;
+  padding: 18rem;
+  z-index: 0;
+  background: var(--primary);
+}
+
+.stars div{
+  width: 2rem;
+  height: 2rem;
+  margin: 0 4px;
+  box-shadow: 0 14px 20px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: animate 4s linear infinite;
+}
+
+.star i{
+  font-size: 2rem;
+  z-index: 1;
+}
+
+div .star{
+  height: 1rem;
+  width: 1rem;
+  border-radius: 20px;
+  background: rgba(255,255,255.0.5);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+
+.stars div:nth-child(1)
+{
+ top: 20%;
+ left: 20%;
+  animation: animate 8s linear infinite;
+}
+
+.stars div:nth-child(2)
+{
+ top: 90%;
+ left: 50%;
+  animation: animate 10s linear infinite;
+}
+
+.stars div:nth-child(3)
+{
+ top: 10%;
+ left: 30%;
+  animation: animate 5s linear infinite;
+}
+
+.stars div:nth-child(4)
+{
+ top: 60%;
+ left: 40%;
+  animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(5)
+{
+ top: 60%;
+ left: 2%;
+  animation: animate 3s linear infinite;
+}
+
+.stars div:nth-child(6)
+{
+ top: 40%;
+ left: 5%;
+  animation: animate 6s linear infinite;
+}
+
+.stars div:nth-child(7)
+{
+ top: 90%;
+ left: 80%;
+  animation: animate 4s linear infinite;
+}
+
+.stars div:nth-child(8)
+{
+ top: 20%;
+ left: 60%;
+  animation: animate 6s linear infinite;
+}
+
+.stars div:nth-child(9)
+{
+ top: 70%;
+ left: 50%;
+  animation: animate 7s linear infinite;
+}
+
+.stars div:nth-child(10)
+{
+ top: 10%;
+ left: 60%;
+  animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(11)
+{
+ top: 10%;
+ left: 90%;
+  animation: animate 11s linear infinite;
+}
+
+.stars div:nth-child(12)
+{
+ top: 70%;
+ left: 90%;
+  animation: animate 12s linear infinite;
+}
+
+.stars div:nth-child(13)
+{
+ top: 60%;
+ left: 10%;
+  animation: animate 13s linear infinite;
+}
+
+.stars div:nth-child(14)
+{
+ top: 20%;
+ left: 80%;
+  animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(15)
+{
+ top: 80%;
+ left: 70%;
+  animation: animate 10s linear infinite;
+}
+
+.stars div:nth-child(16)
+{
+ top: 10%;
+ left: 70%;
+  animation: animate 7s linear infinite;
+}
+
+.stars div:nth-child(17)
+{
+ top: 10%;
+ left: 40%;
+  animation: animate 14s linear infinite;
+}
+
+.stars div:nth-child(18)
+{
+ top: 20%;
+ left: 50%;
+  animation: animate 5s linear infinite;
+}
+
+.stars div:nth-child(19)
+{
+ top: 80%;
+ left: 60%;
+  animation: animate 5s linear infinite;
+}
+
+.stars div:nth-child(20)
+{
+ top: 50%;
+ left: 80%;
+  animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(21)
+{
+ top: 90%;
+ left: 30%;
+  animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(22)
+{
+ top: 90%;
+ left: 10%;
+  animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(23)
+{
+ top: 20%;
+ left: 7%;
+  animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(24)
+{
+ top: 60%;
+ left: 70%;
+  animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(25)
+{
+ top: 30%;
+ left: 95%;
+  animation: animate 9s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+      transform: scale(0.5) translateY(0) rotate(70deg);
+  }
+  50% {
+      transform: scale(1) translateY(0) rotate(70deg); /* Scale back up */
+  }
+  100% {
+      transform: scale(0) translateY(0) rotate(70deg);
+  }
+}
+
+.banner{
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 10rem;
+}
+
+
+img[alt='leah']{
+  width: 22rem;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: var(--mainBoxShadow);
+  order: 0;
+  z-index:1;
+}
+
+.Greeting{
+  width: 45vw;
+  background-color: transparent;
+  order: 1;
+  text-align: start;
+  margin-left: 35px;
+  z-index: 1;
+  margin-top: 3rem;
+}
+
+.Greeting h1{
+  font-family: "Lato", sans-serif;
+  font-size: 3.4rem;
+}
+
+.Greeting h1 span{
+ font-family: "Montserrat", sans-serif;
+ font-size: 4rem;
+}
+
+.Greeting h3{
+  font-size: 4rem;
+  font-family: "Inria Sans" , sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 3px var(--alternative);
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.Greeting h3::before{
+  content: "Developer";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  color: var(--alternative);
+  border-right: 8px solid var(--alternative);
+  transition: 1s ease-in-out;
+}
+
+.Greeting h3:hover::before{
+  width: 58%;
+  filter: drop-shadow(0 0 25px rgb(255, 0, 26));
+}
+
+.lnk i {
+  font-size: 1.4rem;
+  border-radius: 50%;
+  padding: 8px 12px;
+}
+
+.lnk i:hover{
+  color: var(--alternative);
+  cursor: pointer;
+}
+
+/* Heading & Content Fonts */
+.secHeading{
+  font-family: "Inria Serif";
+}
+.sectionP{
+  font-family: "Montserrat", sans-serif;
+}
+
+nav a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: border-bottom 0.3s;
+}
+
+nav a.active {
+  border-bottom: 3px solid yellow;
+}
