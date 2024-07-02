@@ -1,15 +1,6 @@
 <template>
     <div class="card">
 
-        <!-- <div class="card-header">
-         <slot name="cardHeader"></slot>
-        </div>
-
-        <div class="card-body">
-          <slot name="cardBody"></slot>
-        </div> -->
-
-        
         <slot name="cardImg"></slot>
         
         <div class="card-img-overlay">
@@ -26,6 +17,9 @@
 }
 </script>
 
-<style>
-   
+<style scoped>
+   .card {
+  border: 0.1rem solid var(--alternative);
+  border-radius: 0;
+}
 </style>

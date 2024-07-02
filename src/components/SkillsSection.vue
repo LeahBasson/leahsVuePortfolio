@@ -3,10 +3,10 @@
       <div class="row">
                   <h2 class="display-3 text-white fadeInUp secHeading mt-4">Skills</h2>
                   <div class=" sectionP" v-if="skills?.length">
-                      <div class="skillsText" v-for="skills in skills" :key="skills.id">
-                          <h4 class="fw-bold mt-3" v-if="skills">{{  skills.skillName }}<span>{{  skills.level }}</span></h4>
+                      <div class="skillsText" v-for="skill in skills" :key="skill.id">
+                          <h4 class="fw-bold mt-3" v-if="skills">{{  skill.skillName }}<span>{{  skill.level }}</span></h4>
                           
-                          <p v-if="skills">{{  skills.description }}</p>
+                          <p v-if="skills">{{  skill.description }}</p>
                       </div>
                     
                   </div>

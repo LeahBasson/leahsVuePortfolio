@@ -571,8 +571,7 @@ color: var(--alternative);
 
 :is(.red .nav-link.active,
 .red .nav-link.active:hover) {
-    background-color: red;
-    /* You can adjust the color value as needed */
+    background-color: var(--alternative);
 }
 
 /* Card  */
@@ -581,11 +580,8 @@ color: var(--alternative);
   position: relative;
   color: var(--secondary);
   box-shadow: #000 0px 11px 15px 0px; 
-  border: 1px solid var(--alternative);
   margin-top: 1.4rem;
-  background-color: #8644A2;
   margin: 1rem;
-
 }
 
 .cardDkt .card-img-top {
@@ -618,25 +614,31 @@ color: var(--alternative);
   opacity: 1;
 }
 
-.cardDkt .card-title .card-text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.projectsDiv .cardDkt h5{
+  color: var(--secondary);
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.cardDkt .card-text{
+  color: var(--secondary)
+}
+
+.cardDkt .button {
+  padding: 0.7rem 1.6rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
 }
 
 .cardDkt .btn-outline-card{
   border: 2px solid var(--alternative);
   color: var(--secondary);
-  padding: 8px 30px;
 }
 
 .cardDkt .btn-outline-card:hover{
   background-color: var(--alternative);
   border: 2px solid var(--secondary);
+  color: var(--secondary)
 }
 
 .Mobile{
@@ -780,7 +782,7 @@ color: var(--alternative);
 
 /* Projects Section */
 
-.cardDkt{
+.projectsDiv .cardDkt{
   display: none;
 }
 
@@ -788,9 +790,39 @@ color: var(--alternative);
   display: block;
 }
 
+.Mobile img{
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 1px solid var(--alternative);;
+}
+
 #projects{
   background-color: var(--primary);
   height: auto;
+}
+
+.Mobile h5 , p{
+  color: var(--secondary);
+}
+
+.buttons{
+  display: none;
+}
+
+.btnMobile{
+  color: var(--secondary);
+  border: 0.1rem solid var(--alternative);
+  text-decoration: none;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+}
+
+.btnMobile:hover{
+  background-color: var(--alternative);
+  border: 2px solid var(--secondary);
+  color: var(--secondary)
 }
 
 #projects ul{
@@ -803,27 +835,20 @@ color: var(--alternative);
 }
 
 .projectsDiv{
-  display: none;
+  display: block;
 }
 
 .Mobile{
   margin-top: 2rem;
 }
 
-.Mobile .btn-outline-card{
-  border: 2px solid var(--alternative);
-  color: var(--primary);
-  width: 100%;
-}
-
-.Mobile .btn-outline-card:hover{
-  background-color: var(--alternative);
-  border: 2px solid var(--secondary);
-  color: var(--secondary);
-}
-
-.card{
-  border: 1px solid var(--primary);
+.Mobile .card {
+  border: 1px solid var(--alternative);
+  background-color: transparent;
+  width: 85%;
+  margin: auto;
+  border-radius: 0;
+  padding: 0;
 }
 
 
