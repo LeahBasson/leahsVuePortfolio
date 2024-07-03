@@ -121,8 +121,8 @@ section {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 0, 26)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Home Section */
 
+/* Home Section */
 #home{
   height: auto;
   background-color: black;
@@ -379,7 +379,6 @@ img[alt='leah']{
   text-align: start;
   margin-left: 35px;
   z-index: 1;
-  margin-top: 3rem;
 }
 
 .Greeting h1{
@@ -452,7 +451,7 @@ img[alt='leah']{
 }
 
 #about p{
-  width: 70vw;
+  width: 75vw;
   font-size: 20px;
   height: 32vh;
   margin: auto;
@@ -477,16 +476,81 @@ img[alt='leah']{
 }
 
 .resText{
-  width: 70vw;
   height: auto;
   background-color: transparent;
-  margin: auto;
+  margin-left: 11rem;
   text-align: left;
+}
+
+.resCenter{
+  display: flex;
+}
+
+.heart-container {
+  position: relative;
+  width: 100px;
+  height: 160px;
+  margin: 30vh auto;
+}
+.heart {
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  top: -78%;
+  left: -79%;
+  transform: rotate(-45deg);
+  transition: transform 0.5s;
+  animation: heartbeat 1s infinite alternate;
+  cursor: pointer;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100px 100px 0 0;
+  position: absolute;
+  background-color: var(--alternative);
+  box-shadow: -15px 18px 15px -6px rgba(255, 0, 0, 0.35);
+}
+.heart:before {
+  left: 44%;
+  top: 0;
+  transform: scale(-1) rotate(225deg);
+}
+.heart:after {
+  left: 0;
+  top: 0;
+  transform: scale(-1) rotate(-225deg);
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.heart:hover:before,
+.heart:hover:after {
+  background-color: unset;
+  box-shadow: none;
+}
+.heart:hover:before {
+  border: 2px dashed #FF0000;
+}
+.heart:hover:after {
+  border: 2px dashed var(--secondary);
 }
 
 .centerBtn{
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  margin-top: -4rem;
 }
 
 #resume h4{
@@ -525,7 +589,7 @@ color: var(--alternative);
 }
 
 .skillsText{
-  width: 70vw;
+  width: 75vw;
   height: auto;
   margin: auto;
   text-align: left;
@@ -657,6 +721,8 @@ color: var(--alternative);
   display: flex;
   flex-wrap: wrap;
   margin: auto;
+  background-color: transparent;
+  margin-left: 8rem;
 }
 
 #testimonials{
@@ -805,6 +871,7 @@ textarea[id=message]:focus{
         background-color: transparent;
         order: 1;
         text-align: center;
+        margin-top: 0;
     }
 
     .lnk i {
@@ -855,9 +922,30 @@ textarea[id=message]:focus{
     height: auto;
 }
 
+.resCenter{
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  width: 50%;
+}
+
+.centerBtn{
+  margin-top: 1rem;
+}
+
 .resText{
-    width: 80vw;
-    text-align: center;
+  width: 80vw;
+  text-align: center;
+  background-color: transparent;
+  margin-left: 0;
+}
+
+.heart-container{
+  display: none;
+}
+
+.heart{
+  display: none;
 }
 
 #resume h2{
@@ -895,7 +983,6 @@ textarea[id=message]:focus{
 }
 
 /* Projects Section */
-
 .projectsDiv .cardDkt{
   display: none;
 }
@@ -930,7 +1017,7 @@ textarea[id=message]:focus{
   border: 0.1rem solid var(--alternative);
   text-decoration: none;
   border-radius: 0.4rem;
-  padding: 0.2rem;
+  padding: 0.3rem;
 }
 
 .btnMobile:hover{
@@ -940,7 +1027,7 @@ textarea[id=message]:focus{
 }
 
 #projects ul{
-  width: 80%;
+  width: 76%;
 }
 
 #projects li{
@@ -949,7 +1036,7 @@ textarea[id=message]:focus{
 }
 
 .projectsDiv{
-  display: block;
+  display: none;
 }
 
 .Mobile{
@@ -959,12 +1046,13 @@ textarea[id=message]:focus{
 .Mobile .card {
   border: 1px solid var(--alternative);
   background-color: transparent;
-  width: 85%;
+  width: 80%;
   margin: auto;
   border-radius: 0;
   padding: 0;
 }
 
+/* Testimonial Section */
 .testimonialCard{
   display: flex;
   background-color: transparent;
@@ -973,7 +1061,8 @@ textarea[id=message]:focus{
 }
 
 .testimonialSection{
-  width: 86vw;
+  width: 82vw;
+  background-color: transparent;
 }
 
 .testimonial {
@@ -1000,10 +1089,12 @@ textarea[id=message]:focus{
   color: black;
 }
 
+/* Reach Me Section */
 #reachMe{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  display: none;
 }
 
 .contact-content{
@@ -1027,4 +1118,7 @@ textarea[id=message]:focus{
   margin-bottom: 2rem;
 }
 
-  }
+}
+
+
+ 

@@ -41,7 +41,7 @@
              
              
            
-          <div class="Greeting p-5">
+          <div class="Greeting p-5 mt-3 ms-6">
            <h1 class="display-3 fw-bold text-white">Hi I'm <span>Leah Basson</span></h1>
            <h3 v-if="jobTitle">
             <span>{{ jobTitle[0]}}</span>

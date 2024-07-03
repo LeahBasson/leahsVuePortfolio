@@ -14,7 +14,9 @@
         </template>
         <template #cardBody>
           <p>{{ testimonial.testimonial }}</p>
-          <h3>{{ testimonial.Name }}</h3>
+          <div class="name"> 
+            <h3>{{ testimonial.Name }}</h3>
+          </div>  
         </template>
       </MobileCard>
       </div>
