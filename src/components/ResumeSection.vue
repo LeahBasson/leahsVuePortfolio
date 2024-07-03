@@ -34,9 +34,10 @@
 
       </div>
 
-        <div class="heart-container">
-            <div class="heart"></div>
-            </div>
+      <div class="laptop-container">
+        <img class="img-fluid laptop" src="https://leahbasson.github.io/MyImages/images/laptopPng2.png" loading="eager">
+      </div>
+      
             
           </div>
           

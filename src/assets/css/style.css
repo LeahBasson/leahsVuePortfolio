@@ -14,7 +14,7 @@
 :root{
   --primary: black;
   --secondary: white;
-  --alternative: rgb(255, 0, 26);
+  --alternative: #ff001a;
   --awesome: #E59BE9;
   --mainBoxShadow: .5vw .5vw .3vw var(--alternative), inset .8vw 1vw .2vw var(--secondary), 1vw 1vw .2vw var(--secondary); 
   --borderColor: #8644A2;
@@ -484,6 +484,24 @@ img[alt='leah']{
 
 .resCenter{
   display: flex;
+}
+
+.laptop-container{
+  margin-top: 7rem;
+  margin-left: 3rem;
+}
+
+.laptop {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-30px);
+  }
 }
 
 .heart-container {
@@ -967,6 +985,10 @@ textarea[id=message]:focus{
     margin-bottom: 1rem ;
 }
 
+.laptop-container{
+  display: none;
+}
+
 /* Skills Section */
 #skills{
     height: auto;
@@ -1002,6 +1024,9 @@ textarea[id=message]:focus{
 #projects{
   background-color: var(--primary);
   height: auto;
+}
+.Mobile h5{
+  font-weight: bolder;
 }
 
 .Mobile h5 , p{
