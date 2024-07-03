@@ -659,6 +659,120 @@ color: var(--alternative);
   margin: auto;
 }
 
+#testimonials{
+  background-color: var(--primary);
+  font-family: "Montserrat", sans-serif;
+}
+
+#testimonials h2{
+  margin-top: 5rem;
+}
+
+.testimonialCard{
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonialSection{
+  width: 86vw;
+}
+
+.testimonial {
+  width: 30%;
+  padding: 1rem;
+  height: auto;
+  margin: 13px;
+  text-align: center;
+  border: 2px solid var(--alternative);
+  background-color: var(--secondary);
+}
+
+.testimonial img {
+  width: 12rem;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 1px solid var(--alternative);
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial h3 {
+  margin: 0;
+}
+
+#reachMe{
+  width: 100%;
+  height: auto;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-content{
+  width: 55vw;
+}
+
+.contact-content img{
+  width: 15rem;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid var(--secondary);
+  margin-top: 2rem;
+}
+
+.contactP{
+  color: var(--secondary);
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.formsDiv{
+  width: 40vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+.formsDiv h2{
+  margin-top: 2rem;
+}
+
+#contactForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-group{
+  width: 30vw;
+  padding: 10px 42px;
+}
+
+input[class=form-control]:focus{
+  border: 2px solid var(--alternative);
+}
+
+textarea[id=message]:focus{
+  border: 2px solid var(--alternative);
+}
+
+.button1{
+  background-color: transparent;
+  color: var(--secondary);
+  padding: 8px 32px;
+  border: 2px solid var(--alternative);
+  border-radius: 8px;
+}
+
+.button1:hover{
+  background-color: var(--alternative);
+  border: 2px solid var(--secondary);
+}
+
+
 /* Media query */
 @media (width < 999px)
 {
@@ -851,5 +965,66 @@ color: var(--alternative);
   padding: 0;
 }
 
+.testimonialCard{
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.testimonialSection{
+  width: 86vw;
+}
+
+.testimonial {
+  width: 100%;
+  padding: 1rem;
+  height: auto;
+  margin: 0;
+  text-align: center;
+  border: 2px solid var(--alternative);
+  background-color: var(--secondary);
+  margin-top: 1rem;
+}
+
+.testimonial img {
+  width: 12rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 1px solid var(--alternative);
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: 1rem;
+  color: black;
+}
+
+#reachMe{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contact-content{
+  width: 100%;
+}
+
+.formsDiv{
+  width: 100%;
+}
+
+.formsDiv h2{
+  margin-top: 2rem;
+}
+
+.form-group{
+  width: 100%;
+  padding: 10px 42px;
+}
+
+.button1{
+  margin-bottom: 2rem;
+}
 
   }
