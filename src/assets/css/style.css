@@ -365,6 +365,7 @@ div .star{
   order: 1;
   z-index:1;
   padding-top: 1rem;
+  margin-left: -4rem;
 }
 
 img[alt='leah']{
@@ -381,7 +382,7 @@ img[alt='leah']{
   order: 0;
   text-align: start;
   z-index: 1;
-  margin-left: -1rem;
+  margin-left: -3rem;
 }
 
 .Greeting h1{
@@ -462,7 +463,7 @@ img[alt='leah']{
 
 .aboutImg{
   width: 40vw;
-  margin-left: -5rem;
+  margin-left: -8rem;
   order: 0;
 }
 
@@ -856,6 +857,7 @@ textarea[id=message]:focus{
 
     .homeImg{
       order: 2;
+      margin: auto;
     }
 
     .Greeting{
