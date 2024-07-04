@@ -504,67 +504,6 @@ img[alt='leah']{
   }
 }
 
-.heart-container {
-  position: relative;
-  width: 100px;
-  height: 160px;
-  margin: 30vh auto;
-}
-.heart {
-  width: 150%;
-  height: 150%;
-  position: absolute;
-  top: -78%;
-  left: -79%;
-  transform: rotate(-45deg);
-  transition: transform 0.5s;
-  animation: heartbeat 1s infinite alternate;
-  cursor: pointer;
-}
-
-.heart:before,
-.heart:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 100px 100px 0 0;
-  position: absolute;
-  background-color: var(--alternative);
-  box-shadow: -15px 18px 15px -6px rgba(255, 0, 0, 0.35);
-}
-.heart:before {
-  left: 44%;
-  top: 0;
-  transform: scale(-1) rotate(225deg);
-}
-.heart:after {
-  left: 0;
-  top: 0;
-  transform: scale(-1) rotate(-225deg);
-}
-@keyframes heartbeat {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-.heart:hover:before,
-.heart:hover:after {
-  background-color: unset;
-  box-shadow: none;
-}
-.heart:hover:before {
-  border: 2px dashed #FF0000;
-}
-.heart:hover:after {
-  border: 2px dashed var(--secondary);
-}
-
 .centerBtn{
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -819,6 +758,7 @@ color: var(--alternative);
 .formsDiv{
   width: 43vw;
   font-family: "Montserrat", sans-serif;
+  background-color: var(--primary);
 }
 
 .formsDiv h2{
@@ -858,6 +798,10 @@ textarea[id=message]:focus{
   border: 2px solid var(--secondary);
 }
 
+.contact-label{
+  color: var(--secondary);
+  display: flex;
+}
 
 /* Media query */
 @media (width < 999px)
@@ -958,14 +902,6 @@ textarea[id=message]:focus{
   text-align: center;
   background-color: transparent;
   margin-left: 0;
-}
-
-.heart-container{
-  display: none;
-}
-
-.heart{
-  display: none;
 }
 
 #resume h2{
@@ -1117,11 +1053,10 @@ textarea[id=message]:focus{
 }
 
 /* Reach Me Section */
-#reachMe{
+.reachMe{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  display: none;
 }
 
 .contact-content{
@@ -1143,6 +1078,10 @@ textarea[id=message]:focus{
 
 .button1{
   margin-bottom: 2rem;
+}
+
+.contact-label{
+  font-size: 0.9rem;
 }
 
 }
