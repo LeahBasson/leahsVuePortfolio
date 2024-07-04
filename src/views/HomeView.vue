@@ -12,7 +12,7 @@
     <section class="row" id="skills">
       <SkillsSection/>
     </section>
-    <section class="row" id="project">
+    <section class="row" id="projects">
       <ProjectsSection/>
     </section>
     <section class="row" id="testimonials">

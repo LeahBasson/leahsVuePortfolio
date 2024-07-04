@@ -1,15 +1,31 @@
 <template>
     <div class="container-fluid">
+
       <div class="row">
-                <div class=".col-lg-12">
-                  <h2 class="display-3 text-white fadeInUp p-3 secHeading">About</h2>
-                  <p  class="text-white sectionP mt-4" v-if="about">
-                      <span>{{ about[0]}}</span>
-                  </p>
-                  <Spinner v-else/>
-                  </div>
+          <div class="col-lg-12">
+            <h2 class="display-3 text-white fadeInUp p-3 secHeading">About</h2>
+          </div>
       </div>
-    </div>
+
+      <div class="row">
+        <div class="aboutSection">
+
+          <div class="aboutImg">
+          <img class="img-fluid" src="https://leahbasson.github.io/MyImages/images/aboutImg.jpg" alt="leah" loading="eager">
+          </div>
+
+          <div class="aboutText">
+            <p  class="text-white sectionP mt-4" v-if="about">
+              <span>{{ about[0]}}</span>
+            </p>
+            <Spinner v-else/>
+        </div>
+
+        </div>
+
+      </div>
+                
+      </div>
   </template>
   
   <script setup>

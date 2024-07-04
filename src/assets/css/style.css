@@ -356,11 +356,16 @@ div .star{
   z-index: 1;
   background-color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-top: 0.5rem;
   padding-bottom: 10rem;
 }
 
+.homeImg{
+  order: 1;
+  z-index:1;
+  padding-top: 1rem;
+}
 
 img[alt='leah']{
   width: 22rem;
@@ -368,22 +373,22 @@ img[alt='leah']{
   object-fit: cover;
   object-position: center;
   box-shadow: var(--mainBoxShadow);
-  order: 0;
-  z-index:1;
 }
 
 .Greeting{
-  width: 45vw;
+  width: 44vw;
   background-color: transparent;
-  order: 1;
+  order: 0;
   text-align: start;
-  margin-left: 35px;
   z-index: 1;
+  margin-left: -1rem;
 }
 
 .Greeting h1{
   font-family: "Lato", sans-serif;
   font-size: 3.4rem;
+  margin-top: 3rem;
+  margin-left: -2rem;
 }
 
 .Greeting h1 span{
@@ -398,6 +403,7 @@ img[alt='leah']{
   -webkit-text-stroke: 3px var(--alternative);
   position: relative;
   margin-bottom: 2rem;
+  margin-left: -2rem;
 }
 
 .Greeting h3::before{
@@ -414,6 +420,10 @@ img[alt='leah']{
 .Greeting h3:hover::before{
   width: 58%;
   filter: drop-shadow(0 0 25px rgb(255, 0, 26));
+}
+
+.homeLinks{
+  margin-left: -2rem;
 }
 
 .lnk i {
@@ -440,8 +450,25 @@ img[alt='leah']{
   height: auto;
   background-color: var(--primary);
   text-align: center;
-  padding-top: 7rem;
+  padding-top: 2rem;
   padding-bottom: 10rem;
+}
+
+.aboutSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutImg{
+  width: 40vw;
+  margin-left: -5rem;
+  order: 0;
+}
+
+.aboutText{
+  margin-top: -1rem;
+  order: 1;
 }
 
 .fadeInUp{
@@ -451,10 +478,11 @@ img[alt='leah']{
 }
 
 #about p{
-  width: 75vw;
+  width: 48vw;
   font-size: 20px;
-  height: 32vh;
+  height: auto;
   margin: auto;
+  background-color: transparent;
 }
 
 @keyframes fadeInUp{
@@ -569,7 +597,7 @@ color: var(--alternative);
 }
 
 /* Projects Section */
-#projects{
+.projects{
   height: auto;
   background-color: var(--primary);
   font-family: "Montserrat", sans-serif;
@@ -577,7 +605,7 @@ color: var(--alternative);
   padding-bottom: 4rem;
 }
 
-#projects ul{
+.projects ul{
   background-color: var(--primary);
   width: 80%;
   margin: auto;
@@ -585,7 +613,7 @@ color: var(--alternative);
   border: 2px solid var(--alternative);
 }
 
-#projects li{
+.projects li{
   font-size: 1.3rem;
   padding: 8px 32px;
 }
@@ -733,7 +761,7 @@ color: var(--alternative);
   background-color: var(--primary);
   display: flex;
   justify-content: space-between;
-  padding-top: 2rem;
+  padding-top: 7rem;
 }
 
 .contact-content{
@@ -824,18 +852,26 @@ textarea[id=message]:focus{
 
     img[alt='leah']{
         width: 14rem;
-        margin: auto;
-        order: 2;
+    }
+
+    .homeImg{
+      order: 2;
     }
 
     .Greeting{
         width: 78vw;
-        margin: auto;
         height: auto;
         background-color: transparent;
         order: 1;
         text-align: center;
         margin-top: 0;
+        margin-left: 0;
+        margin: auto;
+    }
+
+    .homeLinks{
+      margin-left: 0;
+      margin-top: 1rem;
     }
 
     .lnk i {
@@ -846,6 +882,8 @@ textarea[id=message]:focus{
     .Greeting h1{
         font-size: 1.2rem;
         text-align: center;
+        margin-top: 0;
+        margin-left: 0;
     }
     
     .Greeting h1 span{
@@ -858,6 +896,8 @@ textarea[id=message]:focus{
         font-weight: normal;
         margin-bottom: 1rem;
         -webkit-text-stroke: none;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
     .Greeting h3::before{
@@ -869,6 +909,24 @@ textarea[id=message]:focus{
       height: auto;
       padding-top: 0;
       padding-bottom: 0;
+  }
+
+  .aboutSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .aboutImg{
+    width: 80vw;
+    margin-left: 0;
+    order: 1;
+    margin-top: 3rem;
+  }
+
+  .aboutText{
+    margin-top: 0;
+    order: 0;
   }
 
   #about h2{
@@ -959,7 +1017,7 @@ textarea[id=message]:focus{
   border-bottom: 1px solid var(--alternative);;
 }
 
-#projects{
+.projects{
   background-color: var(--primary);
   height: auto;
 }
@@ -989,11 +1047,11 @@ textarea[id=message]:focus{
   color: var(--secondary)
 }
 
-#projects ul{
+.projects ul{
   width: 76%;
 }
 
-#projects li{
+.projects li{
   padding: 8px 1px;
   font-size: 1.2rem;
 }
@@ -1057,6 +1115,7 @@ textarea[id=message]:focus{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-top: 2rem;
 }
 
 .contact-content{

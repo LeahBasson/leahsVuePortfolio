@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid" id="projects">
+  <div class="container-fluid projects">
 
     <div class="row">
 
