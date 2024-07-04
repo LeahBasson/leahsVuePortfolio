@@ -40,5 +40,82 @@
   </script>
   
   <style>
-  
-  </style>
+  /* About Section */
+#about{
+  height: auto;
+  background-color: var(--primary);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+}
+
+.aboutSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutImg{
+  width: 40vw;
+  margin-left: -8rem;
+  order: 0;
+}
+
+.aboutText{
+  margin-top: -1rem;
+  order: 1;
+}
+
+.fadeInUp{
+  animation-name: fadeInUp;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+
+#about p{
+  width: 48vw;
+  font-size: 20px;
+  height: auto;
+  margin: auto;
+  background-color: transparent;
+}
+
+/* Media query */
+@media (width < 999px)
+{
+  /* About Section */
+  #about{
+      height: auto;
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+
+  .aboutSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .aboutImg{
+    width: 80vw;
+    margin-left: 0;
+    order: 1;
+    margin-top: 3rem;
+  }
+
+  .aboutText{
+    margin-top: 0;
+    order: 0;
+  }
+
+  #about h2{
+      margin-top: 1rem;
+  }
+
+  #about p{
+      width: 80vw;
+      height: auto;
+      font-size: 1rem;
+  }
+}
+</style>
