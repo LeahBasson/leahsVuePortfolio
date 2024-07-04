@@ -6,36 +6,36 @@
         
         <div class="banner">
           <div class="stars">
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
 
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
                 
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div> 
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div> 
 
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
-                <div><span class="star"><i class="bi bi-dot text-white"></i></span></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
+                <div class="star"><i class="bi bi-dot text-white"></i></div>
              </div> 
              <div class="homeImg">
               <img class="img-fluid" src="https://leahbasson.github.io/MyImages/images/leah.png" alt="leah" loading="eager">
