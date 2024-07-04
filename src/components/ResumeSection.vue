@@ -102,7 +102,7 @@
 .centerBtn{
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  margin-top: -4rem;
+  margin-top: 1rem;
 }
 
 #resume h4{
