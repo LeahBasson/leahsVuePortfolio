@@ -130,7 +130,7 @@ section {
 
 /* banner animation*/
 .stars{
-  position: absolute;
+  position: relative;
   width: 100%;
   padding: 18rem;
   z-index: 0;
