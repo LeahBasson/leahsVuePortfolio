@@ -63,5 +63,119 @@
 </script>
 
 <style>
+/* Resume Section*/
+#resume{
+  height: auto;
+  background-color: var(--primary);
+  text-align: center;
+}
 
+.resText{
+  height: auto;
+  background-color: transparent;
+  margin-left: 11rem;
+  text-align: left;
+}
+
+.resCenter{
+  display: flex;
+}
+
+.laptop-container{
+  margin-top: 7rem;
+  margin-left: 3rem;
+}
+
+.laptop {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-30px);
+  }
+}
+
+.centerBtn{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+}
+
+#resume h4{
+margin-top: 2rem;
+color: var(--alternative); 
+}
+
+#resume p{
+  color: var(--secondary);
+  font-size: 20px;
+}
+
+.btnResume{
+  background-color: transparent;
+  border: 2px solid var(--alternative);
+  color: var(--secondary);
+  padding: 8px 30px;
+  font-size: 18px;
+}
+
+.btnResume:hover{
+  background-color: var(--alternative);
+  border: 2px solid var(--secondary);
+}
+
+.btnResume a{
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+/* Media query */
+@media (width < 999px)
+{
+   /* Resume Section */
+   #resume{
+    height: auto;
+}
+
+.resCenter{
+  width: 72vw;
+  margin: auto;
+}
+
+.centerBtn{
+  margin-top: 1rem;
+}
+
+.resText{
+  text-align: center;
+  margin-left: 0;
+}
+
+#resume h2{
+    margin-top: 3rem;
+}
+
+#resume h4{
+    font-size: 1rem;
+}
+
+#resume p{
+    font-size: 1rem;
+}
+
+.btnResume{
+    margin-top: 0;
+    font-size: 1rem;
+    padding: 5px 32px;
+    margin-bottom: 1rem ;
+}
+
+.laptop-container{
+  display: none;
+}
+}
 </style>
