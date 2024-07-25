@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-
+      
       <div class="reachMe">
         <div class="contact-content">
              <img src="https://leahbasson.github.io/MyImages/images/contactImage.jpg" alt="leahContact" loading="eager">
@@ -49,7 +49,11 @@
                 </div>
               
                 <!-- Submit Button-->
-      <div class="text-center mb-2"><button class="button1" id="submitButton" type="submit">Send Message</button></div>
+                 <div class="contact-buttons">
+                  <div class="text-center"><button class="button1" id="submitButton" type="submit">Send Message</button></div>
+                  <div class="text-center"><button class="button1" id="submitButton" type="reset">Clear</button></div>
+                 </div>
+      
             </form>
             </div>
 

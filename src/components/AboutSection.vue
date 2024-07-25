@@ -57,7 +57,7 @@
 
 .aboutImg{
   width: 40vw;
-  margin-left: -8rem;
+  margin-left: -9rem;
   order: 0;
 }
 

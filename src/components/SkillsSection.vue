@@ -38,7 +38,7 @@
 }
 
 .skillsText{
-  width: 75vw;
+  width: 80vw;
   height: auto;
   margin: auto;
   text-align: left;

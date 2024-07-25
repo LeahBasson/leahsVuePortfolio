@@ -3,7 +3,7 @@
         <div class="row">
             <p class="lead text-white contactP">
                 <span class="shadow">Leah's Portfolio</span>
-                <span >&copy; 2024</span>
+                <span >&copy; {{ cYear }}</span>
             </p>
         </div>
       </footer>
