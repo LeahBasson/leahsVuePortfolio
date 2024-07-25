@@ -73,7 +73,7 @@
 .resText{
   height: auto;
   background-color: transparent;
-  margin-left: 11rem;
+  margin-left: 9rem;
   text-align: left;
 }
 
@@ -83,7 +83,7 @@
 
 .laptop-container{
   margin-top: 7rem;
-  margin-left: 3rem;
+  margin-left: 11rem;
 }
 
 .laptop {
