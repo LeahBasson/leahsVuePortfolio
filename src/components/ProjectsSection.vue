@@ -42,7 +42,7 @@
           <p class="card-text mt-1">{{ project.description }}</p>
           <div class="mt-4 buttons">
             <a :href="project.gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
-            <a :href="project.vercel" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+            <a :href="project.hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
           </div>
 
           </template>
@@ -64,7 +64,7 @@
 
           <div class="mt-4 d-flex flex-column">
             <a :href="project.gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
-            <a :href="project.vercel" target="_blank" class="btnMobile mt-3">Hosted Link</a>
+            <a :href="project.hostedLink" target="_blank" class="btnMobile mt-3">Hosted Link</a>
           </div>
           </template>
       </MobileCard>      
@@ -81,15 +81,15 @@
             <!-- Desktop cards -->     
             <card class="cardDkt">
                 <template #cardImg>
-                <img :src="projects[0].img_url" :alt="projects[0].projectName" loading="eager" class="img-fluid card-img-top">
+                <img :src="projects[8].img_url" :alt="projects[8].projectName" loading="eager" class="img-fluid card-img-top">
                 </template>
 
                 <template #cardOverlay>   
-                <h5 class="card-title">{{ projects[0].projectName }}</h5>
-                <p class="card-text mt-1">{{ projects[0].description }}</p>
+                <h5 class="card-title">{{ projects[8].projectName }}</h5>
+                <p class="card-text mt-1">{{ projects[8].description }}</p>
                 <div class="mt-4 buttons">
-                  <a :href="projects[0].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
-                  <a :href="projects[0].vercel" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+                  <a :href="projects[8].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
+                  <a :href="projects[8].hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
                 </div>
                 </template>
             </card> 
@@ -104,7 +104,7 @@
                 <p class="card-text mt-1">{{ projects[4].description }}</p>
                 <div class="mt-4 buttons">
                   <a :href="projects[4].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
-                  <a :href="projects[4].vercel" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+                  <a :href="projects[4].hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
                 </div>
                 </template>
             </card>  
@@ -120,7 +120,7 @@
 
                 <div class="mt-4 buttons">
                   <a :href="projects[6].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
-                  <a :href="projects[6].vercel" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+                  <a :href="projects[6].hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
                 </div>
                 </template>
             </card>  
@@ -135,16 +135,16 @@
      <div class="Mobile">
         <MobileCard class="card mt-4">
             <template #cardHeader>
-            <img :src="projects[0].img_url" :alt="projects[0].projectName" loading="eager" class="img-fluid mobileImage">
+            <img :src="projects[8].img_url" :alt="projects[8].projectName" loading="eager" class="img-fluid mobileImage">
             </template>
 
             <template #cardBody>
-            <h5 class="card-title">{{ projects[0].projectName }}</h5>
-            <p class="card-text mt-1">{{ projects[0].description }}</p>
+            <h5 class="card-title">{{ projects[8].projectName }}</h5>
+            <p class="card-text mt-1">{{ projects[8].description }}</p>
 
             <div class="mt-4 d-flex flex-column">
-              <a :href="projects[0].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
-              <a :href="projects[0].vercel" target="_blank" class="btnMobile mt-3">Hosted Link</a>
+              <a :href="projects[8].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
+              <a :href="projects[8].hostedLink" target="_blank" class="btnMobile mt-3">Hosted Link</a>
             </div>
             </template>
         </MobileCard>      
@@ -162,7 +162,7 @@
 
           <div class="mt-4 d-flex flex-column">
             <a :href="projects[4].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
-            <a :href="projects[4].vercel" target="_blank" class="btnMobile mt-3">Hosted Link</a>
+            <a :href="projects[4].hostedLink" target="_blank" class="btnMobile mt-3">Hosted Link</a>
           </div>
           </template>
       </MobileCard>      
@@ -180,7 +180,7 @@
 
           <div class="mt-4 d-flex flex-column">
             <a :href="projects[6].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
-            <a :href="projects[6].vercel" target="_blank" class="btnMobile mt-3">Hosted Link</a>
+            <a :href="projects[6].hostedLink" target="_blank" class="btnMobile mt-3">Hosted Link</a>
           </div>
           </template>
       </MobileCard>      
@@ -207,39 +207,39 @@
 
             <div class="mt-4 buttons">
               <a :href="projects[5].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
-              <a :href="projects[5].vercel" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+              <a :href="projects[5].hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
             </div>
             </template>
           </card> 
 
           <card class="cardDkt">
             <template #cardImg>
-            <img :src="projects[3].img_url" :alt="projects[3].projectName" loading="eager" class="img-fluid card-img-top">
+            <img :src="projects[7].img_url" :alt="projects[7].projectName" loading="eager" class="img-fluid card-img-top">
             </template>
 
             <template #cardOverlay>        
-            <h5 class="card-title">{{ projects[3].projectName }}</h5>
-            <p class="card-text mt-1">{{ projects[3].description }}</p>
+            <h5 class="card-title">{{ projects[7].projectName }}</h5>
+            <p class="card-text mt-1">{{ projects[7].description }}</p>
 
             <div class="mt-4 buttons">
-              <a :href="projects[3].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
-              <a :href="projects[3].vercel" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+              <a :href="projects[7].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
+              <a :href="projects[7].hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
             </div>
             </template>
           </card> 
 
           <card class="cardDkt">
             <template #cardImg>
-            <img :src="projects[2].img_url" :alt="projects[2].projectName" loading="eager" class="img-fluid card-img-top">
+            <img :src="projects[11].img_url" :alt="projects[11].projectName" loading="eager" class="img-fluid card-img-top">
             </template>
 
             <template #cardOverlay>     
-            <h5 class="card-title">{{ projects[2].projectName }}</h5>
-            <p class="card-text mt-1">{{ projects[2].description }}</p>
+            <h5 class="card-title">{{ projects[11].projectName }}</h5>
+            <p class="card-text mt-1">{{ projects[11].description }}</p>
 
             <div class="mt-4 buttons">
-              <a :href="projects[2].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
-              <a :href="projects[2].vercel" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+              <a :href="projects[11].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
+              <a :href="projects[11].hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
             </div>
             </template>
           </card> 
@@ -262,134 +262,7 @@
 
                     <div class="mt-4 d-flex flex-column">
                       <a :href="projects[5].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
-                      <a :href="projects[5].vercel" target="_blank" class="btnMobile mt-3">Hosted Link</a>
-                    </div>
-
-                    </template>
-                </MobileCard>      
-    </div>
-
-    <div class="Mobile">
-                <MobileCard class="card mt-4">
-                    <template #cardHeader>
-                    <img :src="projects[3].img_url" :alt="projects[3].projectName" loading="eager" class="img-fluid mobileImage">
-                    </template>
-                    <template #cardBody>
-                    <h5 class="card-title">{{ projects[3].projectName }}
-                    </h5>
-                    <p class="card-text mt-1">{{ projects[3].description }}</p>
-
-                    <div class="mt-4 d-flex flex-column">
-                      <a :href="projects[3].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
-                      <a :href="projects[3].vercel" target="_blank" class="btnMobile mt-3">Hosted Link</a>
-                    </div>
-
-                    </template>
-                </MobileCard>      
-    </div>
-
-    <div class="Mobile">
-                <MobileCard class="card mt-4">
-                    <template #cardHeader>
-                    <img :src="projects[2].img_url" :alt="projects[2].projectName" loading="eager" class="img-fluid mobileImage">
-                    </template>
-                    <template #cardBody>
-                    <h5 class="card-title">{{ projects[2].projectName }}
-                    </h5>
-                    <p class="card-text mt-1">{{ projects[2].description }}</p>
-
-                    <div class="mt-4 d-flex flex-column">
-                      <a :href="projects[2].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
-                      <a :href="projects[2].vercel" target="_blank" class="btnMobile mt-3">Hosted Link</a>
-                    </div>
-
-                    </template>
-                </MobileCard>      
-    </div>
-
-     </div>
-     <Spinner v-else/>
-
-        </div>
-
-        <!-- Logo -->
-      <div class="tab-pane fade" id="pills-logo" role="tabpanel" aria-labelledby="pills-logo-tab">
-        <div class="projectsDiv" v-if="projects">
-
-          <!-- Desktop cards -->     
-          <card class="cardDkt">
-                    <template #cardImg>
-                    <img :src="projects[1].img_url" :alt="projects[1].projectName" loading="eager" class="img-fluid card-img-top">
-                    </template>
-                    <template #cardOverlay>
-                    
-                    <h5 class="card-title">{{ projects[1].projectName }}
-                    </h5>
-                    <p class="card-text mt-1">{{ projects[1].description }}</p>
-
-                    <div class="mt-4 buttons">
-                      <a :href="projects[1].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
-                      <a :href="projects[1].vercel" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
-                    </div>
-
-                    </template>
-            </card>
-            
-            <card class="cardDkt">
-                    <template #cardImg>
-                    <img :src="projects[7].img_url" :alt="projects[7].projectName" loading="eager" class="img-fluid card-img-top">
-                    </template>
-                    <template #cardOverlay>
-                    
-                    <h5 class="card-title">{{ projects[7].projectName }}
-                    </h5>
-                    <p class="card-text mt-1">{{ projects[7].description }}</p>
-
-                    <div class="mt-4 buttons">
-                      <a :href="projects[7].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
-                      <a :href="projects[7].vercel" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
-                    </div>
-
-                    </template>
-            </card>
-
-            <card class="cardDkt">
-                    <template #cardImg>
-                    <img :src="projects[8].img_url" :alt="projects[8].projectName" loading="eager" class="img-fluid card-img-top">
-                    </template>
-                    <template #cardOverlay>
-                    
-                    <h5 class="card-title">{{ projects[8].projectName }}
-                    </h5>
-                    <p class="card-text mt-1">{{ projects[8].description }}</p>
-
-                    <div class="mt-4 buttons">
-                      <a :href="projects[8].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
-                      <a :href="projects[8].vercel" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
-                    </div>
-
-                    </template>
-            </card>
-
-        </div>
-        <Spinner v-else/>
-
-        <!-- Mobile Card -->
-     <div v-if="projects?.length">
-
-      <div class="Mobile">
-                <MobileCard class="card mt-4">
-                    <template #cardHeader>
-                    <img :src="projects[1].img_url" :alt="projects[1].projectName" loading="eager" class="img-fluid mobileImage">
-                    </template>
-                    <template #cardBody>
-                    <h5 class="card-title">{{ projects[1].projectName }}
-                    </h5>
-                    <p class="card-text mt-1">{{ projects[1].description }}</p>
-
-                    <div class="mt-4 d-flex flex-column">
-                      <a :href="projects[1].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
-                      <a :href="projects[1].vercel" target="_blank" class="btnMobile mt-3">Hosted Link</a>
+                      <a :href="projects[5].hostedLink" target="_blank" class="btnMobile mt-3">Hosted Link</a>
                     </div>
 
                     </template>
@@ -408,7 +281,134 @@
 
                     <div class="mt-4 d-flex flex-column">
                       <a :href="projects[7].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
-                      <a :href="projects[7].vercel" target="_blank" class="btnMobile mt-3">Hosted Link</a>
+                      <a :href="projects[7].hostedLink" target="_blank" class="btnMobile mt-3">Hosted Link</a>
+                    </div>
+
+                    </template>
+                </MobileCard>      
+    </div>
+
+    <div class="Mobile">
+                <MobileCard class="card mt-4">
+                    <template #cardHeader>
+                    <img :src="projects[11].img_url" :alt="projects[11].projectName" loading="eager" class="img-fluid mobileImage">
+                    </template>
+                    <template #cardBody>
+                    <h5 class="card-title">{{ projects[11].projectName }}
+                    </h5>
+                    <p class="card-text mt-1">{{ projects[11].description }}</p>
+
+                    <div class="mt-4 d-flex flex-column">
+                      <a :href="projects[11].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
+                      <a :href="projects[11].hostedLink" target="_blank" class="btnMobile mt-3">Hosted Link</a>
+                    </div>
+
+                    </template>
+                </MobileCard>      
+    </div>
+
+     </div>
+     <Spinner v-else/>
+
+        </div>
+
+        <!-- Logo -->
+      <div class="tab-pane fade" id="pills-logo" role="tabpanel" aria-labelledby="pills-logo-tab">
+        <div class="projectsDiv" v-if="projects">
+
+          <!-- Desktop cards -->     
+          <card class="cardDkt">
+                    <template #cardImg>
+                    <img :src="projects[3].img_url" :alt="projects[3].projectName" loading="eager" class="img-fluid card-img-top">
+                    </template>
+                    <template #cardOverlay>
+                    
+                    <h5 class="card-title">{{ projects[3].projectName }}
+                    </h5>
+                    <p class="card-text mt-1">{{ projects[3].description }}</p>
+
+                    <div class="mt-4 buttons">
+                      <a :href="projects[3].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
+                      <a :href="projects[3].hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+                    </div>
+
+                    </template>
+            </card>
+            
+            <card class="cardDkt">
+                    <template #cardImg>
+                    <img :src="projects[9].img_url" :alt="projects[9].projectName" loading="eager" class="img-fluid card-img-top">
+                    </template>
+                    <template #cardOverlay>
+                    
+                    <h5 class="card-title">{{ projects[9].projectName }}
+                    </h5>
+                    <p class="card-text mt-1">{{ projects[9].description }}</p>
+
+                    <div class="mt-4 buttons">
+                      <a :href="projects[9].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
+                      <a :href="projects[9].hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+                    </div>
+
+                    </template>
+            </card>
+
+            <card class="cardDkt">
+                    <template #cardImg>
+                    <img :src="projects[10].img_url" :alt="projects[10].projectName" loading="eager" class="img-fluid card-img-top">
+                    </template>
+                    <template #cardOverlay>
+                    
+                    <h5 class="card-title">{{ projects[10].projectName }}
+                    </h5>
+                    <p class="card-text mt-1">{{ projects[10].description }}</p>
+
+                    <div class="mt-4 buttons">
+                      <a :href="projects[10].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
+                      <a :href="projects[10].hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+                    </div>
+
+                    </template>
+            </card>
+
+        </div>
+        <Spinner v-else/>
+
+        <!-- Mobile Card -->
+     <div v-if="projects?.length">
+
+      <div class="Mobile">
+                <MobileCard class="card mt-4">
+                    <template #cardHeader>
+                    <img :src="projects[3].img_url" :alt="projects[3].projectName" loading="eager" class="img-fluid mobileImage">
+                    </template>
+                    <template #cardBody>
+                    <h5 class="card-title">{{ projects[3].projectName }}
+                    </h5>
+                    <p class="card-text mt-1">{{ projects[3].description }}</p>
+
+                    <div class="mt-4 d-flex flex-column">
+                      <a :href="projects[3].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
+                      <a :href="projects[3].hostedLink" target="_blank" class="btnMobile mt-3">Hosted Link</a>
+                    </div>
+
+                    </template>
+                </MobileCard>      
+    </div>
+
+    <div class="Mobile">
+                <MobileCard class="card mt-4">
+                    <template #cardHeader>
+                    <img :src="projects[7].img_url" :alt="projects[7].projectName" loading="eager" class="img-fluid mobileImage">
+                    </template>
+                    <template #cardBody>
+                    <h5 class="card-title">{{ projects[7].projectName }}
+                    </h5>
+                    <p class="card-text mt-1">{{ projects[7].description }}</p>
+
+                    <div class="mt-4 d-flex flex-column">
+                      <a :href="projects[7].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
+                      <a :href="projects[7].hostedLink" target="_blank" class="btnMobile mt-3">Hosted Link</a>
                     </div>
 
                     </template>
@@ -427,7 +427,7 @@
 
                     <div class="mt-4 d-flex flex-column">
                       <a :href="projects[8].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
-                      <a :href="projects[8].vercel" target="_blank" class="btnMobile mt-3">Hosted Link</a>
+                      <a :href="projects[8].hostedLink" target="_blank" class="btnMobile mt-3">Hosted Link</a>
                     </div>
 
                     </template>
@@ -446,17 +446,53 @@
           <!-- Desktop cards -->     
           <card class="cardDkt">
                     <template #cardImg>
-                    <img :src="projects[9].img_url" :alt="projects[9].projectName" loading="eager" class="img-fluid card-img-top">
+                    <img :src="projects[0].img_url" :alt="projects[0].projectName" loading="eager" class="img-fluid card-img-top">
                     </template>
                     <template #cardOverlay>
                     
-                    <h5 class="card-title">{{ projects[9].projectName }}
+                    <h5 class="card-title">{{ projects[0].projectName }}
                     </h5>
-                    <p class="card-text mt-1">{{ projects[9].description }}</p>
+                    <p class="card-text mt-1">{{ projects[0].description }}</p>
 
                     <div class="mt-4 buttons">
-                      <a :href="projects[9].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
-                      <a :href="projects[9].vercel" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+                      <a :href="projects[0].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
+                      <a :href="projects[0].hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+                    </div>
+
+                    </template>
+            </card>
+
+            <card class="cardDkt">
+                    <template #cardImg>
+                    <img :src="projects[1].img_url" :alt="projects[1].projectName" loading="eager" class="img-fluid card-img-top">
+                    </template>
+                    <template #cardOverlay>
+                    
+                    <h5 class="card-title">{{ projects[1].projectName }}
+                    </h5>
+                    <p class="card-text mt-1">{{ projects[1].description }}</p>
+
+                    <div class="mt-4 buttons">
+                      <a :href="projects[1].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
+                      <a :href="projects[1].hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
+                    </div>
+
+                    </template>
+            </card>
+
+            <card class="cardDkt">
+                    <template #cardImg>
+                    <img :src="projects[2].img_url" :alt="projects[2].projectName" loading="eager" class="img-fluid card-img-top">
+                    </template>
+                    <template #cardOverlay>
+                    
+                    <h5 class="card-title">{{ projects[2].projectName }}
+                    </h5>
+                    <p class="card-text mt-1">{{ projects[2].description }}</p>
+
+                    <div class="mt-4 buttons">
+                      <a :href="projects[2].gitHub" target="_blank" class="button btn-outline-card mx-2">Repo Link</a>
+                      <a :href="projects[2].hostedLink" target="_blank" class="button btn-outline-card mx-2">Hosted Link</a>
                     </div>
 
                     </template>
@@ -479,7 +515,7 @@
 
                     <div class="mt-4 d-flex flex-column">
                       <a :href="projects[9].gitHub" target="_blank" class="btnMobile mt-2">Repo Link</a>
-                      <a :href="projects[9].vercel" target="_blank" class="btnMobile mt-3">Hosted Link</a>
+                      <a :href="projects[9].hostedLink" target="_blank" class="btnMobile mt-3">Hosted Link</a>
                     </div>
 
                     </template>
@@ -554,9 +590,11 @@ import { useStore } from 'vuex'
 }
 
 .cardDkt .card-img-top {
-  display: block;
+  /* display: block; */
   width: 100%;
-  height: 55vh;
+  height: 45vh;
+  aspect-ratio: 16/9;
+  object-position: center;
 }
 
 .cardDkt .card-img-overlay {

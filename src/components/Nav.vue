@@ -14,7 +14,7 @@
                   <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#resume">Resume</a>
+                  <a class="nav-link" href="#resume">Education & Experience</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#skills">Skills</a>
@@ -22,9 +22,9 @@
                 <li class="nav-item"> 
                   <a class="nav-link" href="#projects">Projects</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link" href="#testimonials">Testimonials</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a class="nav-link" href="#reachMe">Reach me</a>
                 </li>

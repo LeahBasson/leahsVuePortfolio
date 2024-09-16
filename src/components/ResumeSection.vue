@@ -2,7 +2,7 @@
   <div class="container-fluid">
       <div class="row">
           <div class=".col-lg-12">
-            <h2 class="display-3 text-white fadeInUp secHeading">Resume</h2>
+            <h2 class="display-3 text-white fadeInUp secHeading">Education & Experience</h2>
           </div>     
       </div>
 
@@ -39,7 +39,7 @@
 
       <div class="row">
         <div class="centerBtn">
-          <button class="btnResume mt-2"><a  href="https://drive.google.com/uc?export=download&id=1hlzWUU4luPbO_ptpqSxozBAJK0YiVQn3" id="download-link">Download my CV</a></button>
+          <button class="btnResume mt-2"><a  href="https://drive.google.com/uc?export=download&id=17Vwki70j0xBe5J67oNIHpJdlqGnB56pp" id="download-link">Download my CV</a></button>
         </div>
       </div>
         
