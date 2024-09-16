@@ -68,6 +68,7 @@
   height: auto;
   background-color: var(--primary);
   text-align: center;
+  padding-top: 6rem;
 }
 
 .resText{
