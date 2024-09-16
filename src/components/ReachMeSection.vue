@@ -110,6 +110,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.form-control::placeholder{
+  color: var(--primary);
+}
 </style>
