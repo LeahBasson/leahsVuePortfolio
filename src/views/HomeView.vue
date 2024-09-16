@@ -6,11 +6,11 @@
     <section class="row" id="about">
       <AboutSection/>
     </section>
-    <section class="row" id="resume">
-      <ResumeSection/>
-    </section>
     <section class="row" id="skills">
       <SkillsSection/>
+    </section>
+    <section class="row" id="resume">
+      <ResumeSection/>
     </section>
     <section class="row" id="projects">
       <ProjectsSection/>
