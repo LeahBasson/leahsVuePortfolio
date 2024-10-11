@@ -2,10 +2,10 @@
   <div class="container-fluid projects">
 
     <div class="row">
-        <h2 class="display-3 text-white fadeInUp secHeading mt-4">Projects</h2>
+        <h2 class="display-3 text-white secHeading mt-4" data-aos="fade-up"  data-aos-duration="3000">Projects</h2>
     </div>
 
-    <div class="row">
+    <div class="row" data-aos="fade-up"  data-aos-duration="2000">
 
       <ul class="nav nav-pills d-flex justify-content-center mt-4 red" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -573,6 +573,7 @@
 </template>
 
 <script setup>
+import AOS from 'aos';
 import Card from './Card.vue'
 import MobileCard from './MobileCard.vue'
 import { computed, onMounted } from 'vue'
@@ -585,7 +586,8 @@ import { useStore } from 'vuex'
     onMounted(() => {
       setTimeout(()=>{
         store.dispatch('fetchProjects')
-      }, 1000)
+      }, 1000);
+      AOS.init();
     })
 
 </script>

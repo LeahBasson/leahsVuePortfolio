@@ -20,7 +20,7 @@
             </div>
 
             <div class="formsDiv">
-              <h2 class="display-3 text-white fadeInUp secHeading">Reach Me</h2>
+              <h2 class="display-3 text-white secHeading">Reach Me</h2>
               <form id="contactForm" action="https://formspree.io/f/mjvqdzra" method="POST"  @submit.prevent="validateForm($event)" target="_blank">
                 <div class="row mb-5">
                     <div class="col">
@@ -64,6 +64,8 @@
 </template>
 
 <script>
+import AOS from 'aos';
+
 export default {
   name: 'ReachMe',
   
@@ -106,7 +108,10 @@ export default {
         e.target.submit()
       }
     }
-  }
+  },
+   mounted() {
+      AOS.init();
+    }
 }
 </script>
 

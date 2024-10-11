@@ -1,8 +1,8 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid" data-aos="fade-up"  data-aos-duration="3000">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="display-3 text-white fadeInUp p-3 secHeading">About</h2>
+        <h2 class="display-3 text-white p-3 secHeading fadeInUp">About</h2>
       </div>
     </div>
 
@@ -27,6 +27,7 @@
   </template>
   
   <script setup>
+  import AOS from 'aos';
     import Spinner from './Spinner.vue'
     import { computed, onMounted } from 'vue'
     import { useStore } from 'vuex'
@@ -36,6 +37,7 @@
       setTimeout(()=>{
         store.dispatch('fetchAbout')
       }, 1000)
+      AOS.init();
     })
   </script>
   

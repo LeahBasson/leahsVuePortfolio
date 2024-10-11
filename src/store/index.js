@@ -12,7 +12,9 @@ export default createStore({
     subjects: null,
     skills: null,
     testimonials: null,
-    projects: null
+    projects: null,
+    certificateIntro: null,
+    certificates: null
   },
   getters: {
   },
@@ -37,6 +39,12 @@ export default createStore({
     },
     setProjects(state, value) { 
       state.projects = value
+    },
+    setCertificateIntro(state, value){
+      state.certificateIntro = value
+    },
+    setCertificate(state, value){
+      state.certificates = value
     }
   },
   actions: {
@@ -126,6 +134,32 @@ export default createStore({
         Swal.fire({
           title: "Error",
           text: "Failed to fetch data - projects",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
+    async fetchCertificateIntro(context) {
+      try {
+        let { certificateIntro } = await (await axios.get(portfolioURL)).data
+        context.commit("setCertificateIntro", certificateIntro)
+      } catch (e) { 
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch data - certificate intro",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
+    async fetchCertificates(context) {
+      try {
+        let { certificates } = await (await axios.get(portfolioURL)).data
+        context.commit("setCertificates", certificates)
+      } catch (e) { 
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch data - certificates",
           icon: "error",
           timer: 2000
         })

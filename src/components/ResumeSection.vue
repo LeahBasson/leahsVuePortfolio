@@ -1,12 +1,12 @@
 <template>
   <div class="container-fluid">
-      <div class="row">
+      <div class="row" data-aos="fade-up"  data-aos-duration="3000">
           <div class=".col-lg-12">
             <h2 class="display-3 text-white fadeInUp secHeading">Education & Experience</h2>
           </div>     
       </div>
 
-      <div class="row" v-if="resume?.length">
+      <div class="row" v-if="resume?.length" data-aos="fade-up"  data-aos-duration="3000">
         <div class="col-lg-12 resCenter">
 
           <div>
@@ -47,6 +47,7 @@
 </template>
 
 <script setup>
+import AOS from 'aos';
   import Spinner from './Spinner.vue'
   import { computed, onMounted } from 'vue'
   import { useStore } from 'vuex'
@@ -58,7 +59,8 @@
     setTimeout(()=>{
       store.dispatch('fetchResume'),
       store.dispatch('fetchSubject')
-    }, 1000)
+    }, 1000);
+    AOS.init();
   })
 </script>
 

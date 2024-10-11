@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row" data-aos="fade-up"  data-aos-duration="3000">
                   <h2 class="display-3 text-white fadeInUp secHeading mt-4">Skills</h2>
                   <div class=" sectionP" v-if="skills?.length">
                       <div class="skillsText" v-for="skill in skills" :key="skill.id">
@@ -16,6 +16,7 @@
   </template>
   
   <script setup>
+  import AOS from 'aos';
     import Spinner from './Spinner.vue'
     import { computed, onMounted } from 'vue'
     import { useStore } from 'vuex'
@@ -25,7 +26,8 @@
     onMounted(() => {
       setTimeout(()=>{
         store.dispatch('fetchSkills')
-      }, 1000)
+      }, 1000);
+      AOS.init();
     })
   </script>
   
