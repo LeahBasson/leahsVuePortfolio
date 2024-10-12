@@ -43,7 +43,7 @@ export default createStore({
     setCertificateIntro(state, value){
       state.certificateIntro = value
     },
-    setCertificate(state, value){
+    setCertificates(state, value){
       state.certificates = value
     }
   },

@@ -4,19 +4,18 @@
             <h2 class="display-3 text-white secHeading">Certificates</h2>
         </div>
 
-        <div class="row" id="certificate-listing">
-            <div class="certificate-view" data-bs-toggle="modal" data-bs-target="#awsModal" v-if="certificateIntro">
-                <img :src="certificateIntro[0].img_url" :alt="certificateIntro[0].title" loading="eager" class="img-fluid">
-                <!-- <img class="img-fluid" src="https://leahbasson.github.io/MyImages/images/aws_image.jpg" loading="eager" alt="aws_image"> -->
-                <h2>AWS</h2>
+        <div class="row" id="certificate-listing" v-if="certificateIntro">
+            <div class="certificate-view" data-bs-toggle="modal" data-bs-target="#awsModal">
+                <img :src="certificateIntro[0].img_url" :alt="certificateIntro[0].title" loading="eager" class="img-fluid intro-image">
+                 <h2>{{  certificateIntro[0].title }}</h2>
             </div>
-            <Spinner v-else/>
             <AwsModal />
             <div class="certificate-view">
-                <img class="img-fluid" src="https://leahbasson.github.io/MyImages/images/lifechoices_image.jpg" loading="eager" alt="aws_image">
-                <h2>Life Choices Academy</h2>
+                <img :src="certificateIntro[1].img_url" :alt="certificateIntro[0].title" loading="eager" class="img-fluid intro-image">
+                <h2>{{  certificateIntro[1].title }}</h2>
             </div>
         </div>
+        <Spinner v-else/>
     </div>
 </template>
 
@@ -69,9 +68,21 @@ import Spinner from './Spinner.vue'
     cursor: pointer;
 }
 
-img[alt="aws_image"]{
+.intro-image{
     width: 14rem;
     margin-top: 3rem;
-    box-shadow: 0.2rem 0.2rem 1rem 0.2rem var(--secondary);
+    box-shadow: 0.2rem 0.2rem 1rem 0.2rem var(--secondary); 
+}
+
+/* Media query */
+@media (width < 999px)
+{
+    .certificate-view{
+    width: 65%; 
+}
+.intro-image{
+    width: 100%;
+}
+
 }
 </style>
