@@ -15,6 +15,9 @@
     <section class="row" id="certificate">
       <CertificateSection/>
     </section>
+    <section class="row" id="bagde">
+      <BagdesSection/>
+    </section>
     <section class="row" id="projects">
       <ProjectsSection/>
     </section>
@@ -37,6 +40,7 @@ import ProjectsSection from '@/components/ProjectsSection.vue';
 // import TestimonialSection from '@/components/TestimonialSection.vue';
 import ReachMeSection from '@/components/ReachMeSection.vue';
 import CertificateSection from '@/components/CertificateSection.vue';
+import BagdesSection from '@/components/BagdesSection.vue';
 
  export default {
   name: 'HomeView',
@@ -49,7 +53,8 @@ import CertificateSection from '@/components/CertificateSection.vue';
    ProjectsSection,
   //  TestimonialSection,
    ReachMeSection,
-   CertificateSection
+   CertificateSection,
+   BagdesSection
   }
   
 }

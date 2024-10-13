@@ -14,7 +14,8 @@ export default createStore({
     testimonials: null,
     projects: null,
     certificateIntro: null,
-    certificates: null
+    certificates: null,
+    bagdes: null
   },
   getters: {
   },
@@ -45,6 +46,9 @@ export default createStore({
     },
     setCertificates(state, value){
       state.certificates = value
+    },
+    setBagdes(state, value){
+      state.bagdes = value
     }
   },
   actions: {
@@ -160,6 +164,19 @@ export default createStore({
         Swal.fire({
           title: "Error",
           text: "Failed to fetch data - certificates",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
+    async fetchBagdes(context) {
+      try {
+        let { bagdes } = await (await axios.get(portfolioURL)).data
+        context.commit("setBagdes", bagdes)
+      } catch (e) { 
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch data - bagdes",
           icon: "error",
           timer: 2000
         })

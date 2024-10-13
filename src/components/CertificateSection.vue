@@ -1,19 +1,20 @@
 <template>
     <div class="container-fluid">
         <div class="row" id="topSection">
-            <h2 class="display-3 text-white secHeading">Certificates</h2>
+            <h2 class="display-3 text-white secHeading" data-aos="fade-up"  data-aos-duration="2000">Certificates</h2>
         </div>
 
         <div class="row" id="certificate-listing" v-if="certificateIntro">
-            <div class="certificate-view" data-bs-toggle="modal" data-bs-target="#awsModal">
+            <div class="certificate-view" data-bs-toggle="modal" data-bs-target="#awsModal" data-aos="fade-up"  data-aos-duration="2000">
                 <img :src="certificateIntro[0].img_url" :alt="certificateIntro[0].title" loading="eager" class="img-fluid intro-image">
                  <h2>{{  certificateIntro[0].title }}</h2>
             </div>
             <AwsModal />
-            <div class="certificate-view">
-                <img :src="certificateIntro[1].img_url" :alt="certificateIntro[0].title" loading="eager" class="img-fluid intro-image">
+            <div class="certificate-view" data-bs-toggle="modal" data-bs-target="#LcModal" data-aos="fade-up"  data-aos-duration="2000">
+                <img :src="certificateIntro[1].img_url" :alt="certificateIntro[0].title" loading="eager" class="img-fluid lc-image">
                 <h2>{{  certificateIntro[1].title }}</h2>
             </div>
+            <LcModal />
         </div>
         <Spinner v-else/>
     </div>
@@ -22,6 +23,7 @@
 <script setup>
 import AOS from 'aos';
 import AwsModal from '@/components/AwsModal.vue'
+import LcModal from './LcModal.vue';
 import Spinner from './Spinner.vue'
   import { computed, onMounted } from 'vue'
   import { useStore } from 'vuex'
@@ -45,7 +47,7 @@ import Spinner from './Spinner.vue'
 
 #certificate-listing{
     display: flex;
-    gap: 2rem;
+    gap: 38rem;
     justify-content: center;
     background-color: var(--primary);
 }
@@ -71,7 +73,13 @@ import Spinner from './Spinner.vue'
 .intro-image{
     width: 14rem;
     margin-top: 3rem;
-    box-shadow: 0.2rem 0.2rem 1rem 0.2rem var(--secondary); 
+    border: 1px solid var(--secondary);
+}
+
+.lc-image{
+    width: 14rem;
+    margin-top: 3rem;
+    border: 1px solid var(--secondary);
 }
 
 /* Media query */
