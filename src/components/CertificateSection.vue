@@ -6,7 +6,7 @@
 
         <div class="row" id="certificate-listing" v-if="certificateIntro">
             <div class="certificate-view" data-bs-toggle="modal" data-bs-target="#awsModal" data-aos="fade-up"  data-aos-duration="2000">
-                <img :src="certificateIntro[0].img_url" :alt="certificateIntro[0].title" loading="eager" class="img-fluid intro-image">
+                <img :src="certificateIntro[0].img_url" :alt="certificateIntro[0].title" loading="eager" class="img-fluid lc-image">
                  <h2>{{  certificateIntro[0].title }}</h2>
             </div>
             <AwsModal />
