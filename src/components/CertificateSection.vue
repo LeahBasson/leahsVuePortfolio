@@ -85,6 +85,13 @@ import Spinner from './Spinner.vue'
 /* Media query */
 @media (width < 999px)
 {
+    #certificate-listing{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    background-color: var(--primary);
+}
+
     .certificate-view{
     width: 65%; 
 }

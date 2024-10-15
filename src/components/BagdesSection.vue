@@ -79,6 +79,13 @@ import Spinner from './Spinner.vue'
 /* Media query */
 @media (width < 999px)
 {
+    #bagde-listing{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    background-color: var(--primary);
+}
+
     .bagde-view{
     width: 65%; 
 }
