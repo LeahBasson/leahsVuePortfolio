@@ -39,7 +39,7 @@
 
       <div class="row">
         <div class="centerBtn">
-          <button class="btnResume mt-2"><a  href="https://drive.google.com/uc?export=download&id=17Vwki70j0xBe5J67oNIHpJdlqGnB56pp" id="download-link">Download my CV</a></button>
+          <button class="btnResume mt-2"><a  href="https://drive.google.com/uc?export=download&id=1-g1WIF2wZtISHrPFOwMKsZvJuP2Ty69V" id="download-link">Download my CV</a></button>
         </div>
       </div>
         
