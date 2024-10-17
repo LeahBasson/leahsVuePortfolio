@@ -61,13 +61,13 @@ import Spinner from './Spinner.vue'
 }
 
 .bagde-view:hover{
-    transform: translateY(-10px);
+    transform: translateY(-10px) !important;
     transition: transform 0.5s ease-in-out;
 }
 
 .bagde-view {
     width: 22rem;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out !important;
     cursor: pointer;
 }
 

@@ -15,6 +15,11 @@
                 <h2>{{  certificateIntro[1].title }}</h2>
             </div>
             <LcModal />
+            <div class="certificate-view" data-bs-toggle="modal" data-bs-target="#GCModal" data-aos="fade-up"  data-aos-duration="2000">
+                <img :src="certificateIntro[2].img_url" :alt="certificateIntro[2].title" loading="eager" class="img-fluid lc-image">
+                <h2>{{  certificateIntro[2].title }}</h2>
+            </div>
+            <GCModal />
         </div>
         <Spinner v-else/>
     </div>
@@ -27,6 +32,7 @@ import LcModal from './LcModal.vue';
 import Spinner from './Spinner.vue'
   import { computed, onMounted } from 'vue'
   import { useStore } from 'vuex'
+import GCModal from './GCModal.vue';
   const store = useStore()
   const certificateIntro = computed(() => store.state.certificateIntro)
 
@@ -47,7 +53,7 @@ import Spinner from './Spinner.vue'
 
 #certificate-listing{
     display: flex;
-    gap: 38rem;
+    gap: 8rem;
     justify-content: center;
     background-color: var(--primary);
 }
@@ -60,14 +66,13 @@ import Spinner from './Spinner.vue'
 }
 
 .certificate-view:hover{
-    transform: translateY(-10px);
-    transition: transform 0.5s ease-in-out;
+    transform: translateY(-10px) !important;
 }
 
 .certificate-view {
     width: 22rem;
-    transition: transform 0.5s ease-in-out;
     cursor: pointer;
+    transition: transform 0.5s ease-in-out  !important;
 }
 
 .intro-image{

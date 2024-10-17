@@ -1,16 +1,16 @@
 <template>
-    <div class="modal fade" id="LcModal" tabindex="-1" aria-labelledby="LcModalLabel" aria-hidden="true">
+    <div class="modal fade" id="GCModal" tabindex="-1" aria-labelledby="GCModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="LcModalLabel">Life Choices Certificate</h5>
+            <h5 class="modal-title" id="GCModalLabel">Girl Code Hackathon</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="aws-certificates" v-if="certificates">
             <div class="certificate-content">
-              <img :src="certificates[15].img_url" :alt="certificates[15].certificate" loading="eager" class="img-fluid certificates">
-                  <a href="https://leahbasson.github.io/LCCertificate/" target="_blank"><button class="btnView">View</button></a>
+              <img :src="certificates[16].img_url" :alt="certificates[16].certificate" loading="eager" class="img-fluid certificates">
+                  <a href="https://leahbasson.github.io/GirlCode/" target="_blank"><button class="btnView">View</button></a>
             </div>
             </div>
     
