@@ -7,14 +7,24 @@
         <div class="row" id="bagde-listing" v-if="bagdes">
             <div class="bagde-view" data-bs-toggle="modal" data-bs-target="#osbModal" data-aos="fade-up"  data-aos-duration="2000">
                 <img :src="bagdes[0].bagde" :alt="bagdes[0].title" loading="eager" class="img-fluid bagde-image">
-                 <h2>{{  bagdes[0].title }}</h2>
+                 <h3>{{  bagdes[0].title }}</h3>
             </div>
             <osbModal />
             <div class="bagde-view" data-bs-toggle="modal" data-bs-target="#linuxModal" data-aos="fade-up"  data-aos-duration="2000">
-                <img :src="bagdes[1].bagde" :alt="bagdes[0].title" loading="eager" class="img-fluid bagde-image">
-                <h2>{{  bagdes[1].title }}</h2>
+                <img :src="bagdes[1].bagde" :alt="bagdes[1].title" loading="eager" class="img-fluid bagde-image">
+                <h3>{{  bagdes[1].title }}</h3>
             </div>
             <linuxModal />
+            <div class="bagde-view" data-bs-toggle="modal" data-bs-target="#UiAndUxModal" data-aos="fade-up"  data-aos-duration="2000">
+                <img :src="bagdes[2].bagde" :alt="bagdes[2].title" loading="eager" class="img-fluid bagde-image">
+                <h3>{{  bagdes[2].title }}</h3>
+            </div>
+            <UIAndUxModal />
+            <div class="bagde-view" data-bs-toggle="modal" data-bs-target="#ScrumModal" data-aos="fade-up"  data-aos-duration="2000">
+                <img :src="bagdes[3].bagde" :alt="bagdes[3].title" loading="eager" class="img-fluid bagde-image">
+                <h3>{{  bagdes[3].title }}</h3>
+            </div>
+            <ScrumModal />
         </div>
         <Spinner v-else/>
 
@@ -25,6 +35,8 @@
 import AOS from 'aos';
 import osbModal from '@/components/osbModal.vue'
 import linuxModal from '@/components/linuxModal.vue'
+import UIAndUxModal from './UIAndUxModal.vue';
+import ScrumModal from './ScrumModal.vue';
 import Spinner from './Spinner.vue'
   import { computed, onMounted } from 'vue'
   import { useStore } from 'vuex'
@@ -48,12 +60,12 @@ import Spinner from './Spinner.vue'
 
 #bagde-listing{
     display: flex;
-    gap: 35rem;
+    gap: 2rem;
     justify-content: center;
     background-color: var(--primary);
 }
 
-#bagde-listing h2{
+#bagde-listing h3{
     color: var(--secondary);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -66,7 +78,7 @@ import Spinner from './Spinner.vue'
 }
 
 .bagde-view {
-    width: 22rem;
+    width: 18rem;
     transition: transform 0.5s ease-in-out !important;
     cursor: pointer;
 }
