@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+.wrapper{
+  background-color: var(--primary);
+}
+
 /* custom variables */
 :root{
   --primary: black;
@@ -569,9 +573,9 @@ textarea[id=message]:focus{
         justify-content: center;
         flex-direction: column;
         padding-top: 0;
-        padding-bottom: 2rem;
+        padding-bottom: 0;
     }
-
+    
     img[alt='leah']{
         width: 14rem;
     }

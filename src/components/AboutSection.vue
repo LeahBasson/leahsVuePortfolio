@@ -88,7 +88,7 @@
   /* About Section */
   #about{
       height: auto;
-      padding-top: 0;
+      padding-top: 2rem;
       padding-bottom: 0;
   }
 

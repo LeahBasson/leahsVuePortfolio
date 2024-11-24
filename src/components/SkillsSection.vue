@@ -68,7 +68,7 @@
   /* Skills Section */
 #skills{
     height: auto;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .skillsText{

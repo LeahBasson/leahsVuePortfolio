@@ -39,7 +39,7 @@
 
       <div class="row">
         <div class="centerBtn">
-          <button class="btnResume mt-2"><a  href="https://drive.google.com/uc?export=download&id=1MUe9fa3q4FHDQCbNbDU7HWN9A5XKfjr4" id="download-link">Download my CV</a></button>
+          <button class="btnResume mt-2"><a  href="https://drive.google.com/uc?export=download&id=14w-z1FlW2TWwZXZtA_xrgnvuEEyQfzS6" id="download-link">Download my CV</a></button>
         </div>
       </div>
         
@@ -142,6 +142,7 @@ color: var(--alternative);
    /* Resume Section */
    #resume{
     height: auto;
+    padding-top: 0rem;
 }
 
 .resCenter{
