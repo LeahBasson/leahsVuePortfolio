@@ -9,7 +9,7 @@
           <div class="modal-body">
             <div class="aws-certificates" v-if="bagdes">
             <div class="certificate-content">
-                <img :src="bagdes[2].img_url" :alt="bagdes[2].title" loading="eager" class="img-fluid certificates">
+                <img :src="bagdes[3].img_url" :alt="bagdes[3].title" loading="eager" class="img-fluid certificates">
                 <a href="https://drive.google.com/file/d/1iH1U8b_F3dTOvqKMYS-7_-QWxPLfR8OV/view?usp=sharing" target="_blank"><button class="btnView">View</button></a>
             </div>
             </div>

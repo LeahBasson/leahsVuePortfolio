@@ -15,19 +15,27 @@
                 <h3>{{  bagdes[1].title }}</h3>
             </div>
             <linuxModal />
-            <div class="bagde-view" data-bs-toggle="modal" data-bs-target="#UiAndUxModal" data-aos="fade-up"  data-aos-duration="2000">
+            <div class="bagde-view" data-bs-toggle="modal" data-bs-target="#CyberAnalystModal" data-aos="fade-up"  data-aos-duration="2000">
                 <img :src="bagdes[2].bagde" :alt="bagdes[2].title" loading="eager" class="img-fluid bagde-image">
                 <h3>{{  bagdes[2].title }}</h3>
             </div>
-            <UIAndUxModal />
-            <div class="bagde-view" data-bs-toggle="modal" data-bs-target="#ScrumModal" data-aos="fade-up"  data-aos-duration="2000">
-                <img :src="bagdes[3].bagde" :alt="bagdes[3].title" loading="eager" class="img-fluid bagde-image">
-                <h3>{{  bagdes[3].title }}</h3>
-            </div>
-            <ScrumModal />
+            <CyberAnalystModal />
         </div>
         <Spinner v-else/>
 
+        <div class="row" id="bagde-listing" v-if="bagdes">
+
+        <div class="bagde-view" data-bs-toggle="modal" data-bs-target="#UiAndUxModal" data-aos="fade-up"  data-aos-duration="2000">
+                <img :src="bagdes[3].bagde" :alt="bagdes[3].title" loading="eager" class="img-fluid bagde-image">
+                <h3>{{  bagdes[3].title }}</h3>
+            </div>
+            <UIAndUxModal />
+            <div class="bagde-view" data-bs-toggle="modal" data-bs-target="#ScrumModal" data-aos="fade-up"  data-aos-duration="2000">
+                <img :src="bagdes[4].bagde" :alt="bagdes[4].title" loading="eager" class="img-fluid bagde-image">
+                <h3>{{  bagdes[4].title }}</h3>
+            </div>
+            <ScrumModal />
+        </div>
     </div>
 </template>
 
@@ -37,6 +45,7 @@ import osbModal from '@/components/osbModal.vue'
 import linuxModal from '@/components/linuxModal.vue'
 import UIAndUxModal from './UIAndUxModal.vue';
 import ScrumModal from './ScrumModal.vue';
+import CyberAnalystModal from './CyberAnalystModal.vue'
 import Spinner from './Spinner.vue'
   import { computed, onMounted } from 'vue'
   import { useStore } from 'vuex'
@@ -60,7 +69,7 @@ import Spinner from './Spinner.vue'
 
 #bagde-listing{
     display: flex;
-    gap: 2rem;
+    gap: 12rem;
     justify-content: center;
     background-color: var(--primary);
 }

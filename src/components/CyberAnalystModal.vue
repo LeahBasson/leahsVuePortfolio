@@ -1,16 +1,16 @@
 <template>
-    <div class="modal fade" id="ScrumModal" tabindex="-1" aria-labelledby="ScrumModalLabel" aria-hidden="true">
+    <div class="modal fade" id="CyberAnalystModal" tabindex="-1" aria-labelledby="CyberAnalystModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="ScrumModalLabel">Scrum Hackathon Case Study</h5>
+            <h5 class="modal-title" id="CyberAnalystModalLabel">Junior Cyber Analyst</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="aws-certificates" v-if="bagdes">
             <div class="certificate-content">
-                <img :src="bagdes[4].img_url" :alt="bagdes[4].title" loading="eager" class="img-fluid certificates">
-                <a href="https://drive.google.com/file/d/1IAt0CRcraNJ-fOiYbsFCHaUr1uoM6u2D/view?usp=sharing" target="_blank"><button class="btnView">View</button></a>
+                <img :src="bagdes[2].certificate" :alt="bagdes[2].title" loading="eager" class="img-fluid certificates">
+                <a href="https://leahbasson.github.io/juniorCyberAnalyst/" target="_blank"><button class="btnView">View</button></a>
             </div>
             </div>
             <Spinner v-else/>
